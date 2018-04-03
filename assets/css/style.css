@@ -1,0 +1,63 @@
+#timer {
+    background-color:black;
+    font-size: 18px;
+    font:bold;
+    width: 35%;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+body {
+    font-family: 'Acme', sans-serif;
+    font-size: 14px;
+    background-image: url("..//images/james_bond_007_81422.jpg");
+}
+
+h1 {
+    font-size: 18px;
+}
+
+#start-container {
+    margin: auto;
+    background-color: red;
+    padding:10px 20px 10px 20px;
+    text-align: center;
+}
+
+#game-container {
+    margin: auto;
+    background-color:red;
+    padding:10px 20px 10px 20px;
+    width:50%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#end-container {
+    background-color: red;
+    height: auto;
+    padding-bottom: 50px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+header {
+    text-align: center;
+    border-bottom: black dashed 1px;
+    font-family: 'Acme', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font:bold;
+}
+
+ footer {
+     text-align: center
+     
+ }
+
+#correctAnswers, #wrongAnswers, #unAnswered {
+    color: black;
+    font-size: 18px;
+}
+ 

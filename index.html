@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>007 QUIZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--link to css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!--Button starts the game on start page-->
+    <div id="start-container">
+
+        <h1>You Think You Know 007 ???</h1>
+
+        <button id = "start-button">Start</button>
+
+    </div>
+
+    <!--Gameplay container-->
+    <div id= "game-container">
+
+        <h1>You Think You Know 007 ???</h1>
+
+        <!--countdown timer div-->
+        <div id="timer">Time Remaining: <span id = "timerNumber">45 Seconds</span>
+        </div>
+
+    
+       <!-- <section>-->
+           
+            <p>What was the name of the first Bond Film?</p>
+            <!--Dr.No-->
+            <input type="radio" name="question1" value= "Casino Royale">Casino Royale<br>
+            <input type="radio" name="question1" value="Dr. No">Dr. No<br>
+            <input type="radio" name="question1" value="For Your Eyes Only">For Your Eyes Only<br>
+            <input type="radio" name="question1" value="Goldfinger">Goldfinger<br>
+    
+            <p>What was the name of James Bond's boss?</p>
+            <!--M-->
+            <input type="radio" name="question2" value="G">G<br>
+            <input type="radio" name="question2" value="M">M<br>
+            <input type="radio" name="question2" value="Q">Q<br>
+            <input type="radio" name="question2" value="Z">Z<br>
+
+            <p>Which movie was the first Bond film to star Pierce Brosnan?</p>
+            <!--Goldeneye-->
+            <input type="radio" name="question3" value="Tomorrow Never Dies">Tomorrow Never Dies<br>
+            <input type="radio" name="question3" value="Die Another Day">Die Another Day<br>
+            <input type="radio" name="question3" value="Goldeneye">Goldeneye<br>
+            <input type="radio" name="question3" value="The World is not Enough">The World is not Enough<br>
+
+            <p>SPECTRE stands for Special Executive for Counter Intelligence, Terroism, Revenge and...?</p>
+            <!--Extortiion-->
+            <input type="radio" name="question4" value="Extinction">Extinction<br>
+            <input type="radio" name="question4" value="Extortion">Extortion<br>
+            <input type="radio" name="question4" value="Examination">Examination<br>
+            <input type="radio" name="question4" value="Explanation">Explanation<br>
+
+            <p>What does "00" signify in 007?</p>
+            <!--A lkicense to kill-->
+            <input type="radio" name="question5" value="A license to kill">A license to kill<br>
+            <input type="radio" name="question5" value="The rank of Secretary of Defense">The rank of Secretary of Defense<br>
+            <input type="radio" name="question5" value="A license to carry a firearm">A license to carry a firearm<br>
+            <input type="radio" name="question5" value="The time he eats lunch">The time he eats his lunch<br>
+
+            <p>What secret service agency does 007 work for?</p>
+            <!--MI6-->
+            <input type="radio" name="question6" value="MI5"> MI5<br>
+            <input type="radio" name="question6" value="MI6"> MI6<br>
+            <input type="radio" name="question6" value="MI7"> MI7<br>
+            <input type="radio" name="question6" value="MI8"> MI8<br>
+
+            <p>Aside from the latest 007 Daniel Craig, five actors have portrayed James Bond. Which actor has starred in the most films?</p>
+            <!--Roger Moore-->
+            <input type="radio" name="question7" value="Sean Connery"> Sean Connery<br>
+            <input type="radio" name="question7" value="Pierce Brosnan"> Pierce Brosnan<br>
+            <input type="radio" name="question7" value="Roger Moore"> Roger Moore<br>
+            <input type="radio" name="question7" value="Timothy Dalton"> Timothy Dalton<br>
+
+            <p>What car is most closely identified with James Bond?</p>
+            <!--Aston Martin DB5-->
+            <input type="radio" name="question8" value="Ford Mustang"> Ford Mustang<br>
+            <input type="radio" name="question8" value="Toyota 2000"> Toyota 2000<br>
+            <input type="radio" name="question8" value="Aston Martin DB5"> Aston Martin DB5<br>
+            <input type="radio" name="question8" value="Mercedes Benz S63"> Meredes Benz S63<br>
+
+            <p>What is James Bond's favorite drink?</p>
+            <!--Vesper Martini-->
+            <input type="radio" name="question9" value="Vesper Martini"> Vesper Martini<br>
+            <input type="radio" name="question9" value="Blood Orange Margarita"> Blood Orange Margarita<br>
+            <input type="radio" name="question9" value="Scotch on the Rocks"> Scotch on the Rocks<br>
+            <input type="radio" name="question9" value="Dark and Stormy"> Dark and Stormy<br>
+
+            <p>Who sang the James Bond theme song in the 2012 movie <em>Skyfall</em>?</p>
+            <!--Adele-->
+            <input type="radio" name="question10" value="Lady Gaga">a. Lady Gaga<br>
+            <input type="radio" name="question10" value="Celion Dion">Celion Dion<br>
+            <input type="radio" name="question10" value="Beyonce"> Beyonce<br>
+            <input type="radio" name="question10" value="Adele"> Adele<br>
+            
+            <br><br>
+
+            <!--finished button for user to submit answers before time is up-->
+            <button id="done-button">Finished!</button> 
+            
+
+       <!-- </section>-->
+    </div>
+
+    <!-- End of the game-->
+    <div id = "end-container">
+
+        <h1 id= "done"> Finished!</h1>
+        <br>
+
+        <h1> Correct Answers: <span id = "correct_answers"></span></h1>
+        
+        <h1> Incorrect Answers: <span id = "wrong_answers"></span></h1>
+        
+        <h1> Unanswered: <span id = "unanswered"></span></h1>
+    </div>
+       
+<footer>
+    <p>Copyright &copy; 2018</p>
+</footer>
+
+
+<!--link to jQuery-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Link to Javascript-->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
